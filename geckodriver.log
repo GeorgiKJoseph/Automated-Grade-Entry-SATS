@@ -1,0 +1,110 @@
+1591888862615	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileB23Fjh"
+1591888868810	Marionette	INFO	Listening on port 37507
+1591888868843	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591888879817	Marionette	INFO	Stopped listening on port 37507
+1591888964164	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileR53aTK"
+1591888972945	Marionette	INFO	Listening on port 44351
+1591888972993	Marionette	WARN	TLS certificate errors will be ignored for this session
+1591888986446	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileTZqAdB"
+JavaScript error: resource://gre/modules/UrlClassifierListManager.jsm, line 691: TypeError: this.tablesData[table] is undefined
+1591888996021	Marionette	INFO	Stopped listening on port 44351
+1591888997472	Marionette	INFO	Listening on port 36447
+1591888997494	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result.htm#, line 602: ReferenceError: myip is not defined
+JavaScript warning: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result_files/jquery_002.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1591889021130	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilezBPov5"
+1591889024244	Marionette	INFO	Stopped listening on port 36447
+1591889029932	Marionette	INFO	Listening on port 35039
+1591889029967	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result.htm#, line 602: ReferenceError: myip is not defined
+JavaScript warning: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result_files/jquery_002.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1591889601147	Marionette	INFO	Stopped listening on port 35039
+1591889772693	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileoCkxi4"
+1591889778375	Marionette	INFO	Listening on port 42241
+1591889778411	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result.htm#, line 602: ReferenceError: myip is not defined
+JavaScript warning: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result_files/jquery_002.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1591889866823	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile0VyZuB"
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1591889870429	Marionette	INFO	Stopped listening on port 42241
+1591889873565	Marionette	INFO	Listening on port 32801
+1591889873653	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result.htm#, line 602: ReferenceError: myip is not defined
+JavaScript warning: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result_files/jquery_002.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1591890930039	Marionette	INFO	Stopped listening on port 32801
+1591892879423	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilelqBqOF"
+1591892885167	Marionette	INFO	Listening on port 42047
+1591892885255	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result.htm#, line 602: ReferenceError: myip is not defined
+JavaScript warning: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result_files/jquery_002.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1591892973934	Marionette	INFO	Stopped listening on port 42047
+1591892975907	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilea6cZu2"
+1591892981171	Marionette	INFO	Listening on port 46383
+1591892981225	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result.htm#, line 602: ReferenceError: myip is not defined
+JavaScript warning: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result_files/jquery_002.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1591893033898	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileFysla2"
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1591893037968	Marionette	INFO	Stopped listening on port 46383
+1591893040866	Marionette	INFO	Listening on port 34059
+1591893040921	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result.htm#, line 602: ReferenceError: myip is not defined
+JavaScript warning: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result_files/jquery_002.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1591893155168	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofiledxWP2F"
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1591893158947	Marionette	INFO	Stopped listening on port 34059
+1591893161618	Marionette	INFO	Listening on port 33379
+1591893161693	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result.htm#, line 602: ReferenceError: myip is not defined
+JavaScript warning: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result_files/jquery_002.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1591893334534	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileopWTWX"
+1591893340035	Marionette	INFO	Listening on port 46049
+1591893340056	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result.htm#, line 602: ReferenceError: myip is not defined
+JavaScript warning: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result_files/jquery_002.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1591893362348	Marionette	INFO	Stopped listening on port 46049
+1591893399748	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofile2lfUSF"
+1591893405577	Marionette	INFO	Listening on port 43133
+1591893405685	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result.htm#, line 602: ReferenceError: myip is not defined
+JavaScript warning: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result_files/jquery_002.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1591893479645	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilexeupWP"
+1591893485546	Marionette	INFO	Listening on port 42735
+1591893485569	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result.htm#, line 602: ReferenceError: myip is not defined
+JavaScript warning: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result_files/jquery_002.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Exiting due to channel error.
+[GFX1-]: Receive IPC close with reason=AbnormalShutdown
+Exiting due to channel error.
+Exiting due to channel error.
+1591894057488	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileSRlAUO"
+1591894063044	Marionette	INFO	Listening on port 43393
+1591894063113	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result.htm#, line 602: ReferenceError: myip is not defined
+JavaScript warning: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result_files/jquery_002.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
+1591894202538	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofilegFBeyK"
+1591894207655	Marionette	INFO	Listening on port 44741
+1591894207766	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result.htm#, line 602: ReferenceError: myip is not defined
+JavaScript warning: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result_files/jquery_002.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+1591894414530	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileOd8N5p"
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1591894419891	Marionette	INFO	Stopped listening on port 44741
+1591894421528	Marionette	INFO	Listening on port 39733
+1591894421554	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result.htm#, line 602: ReferenceError: myip is not defined
+JavaScript warning: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result_files/jquery_002.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
+1591894614169	Marionette	INFO	Stopped listening on port 39733
