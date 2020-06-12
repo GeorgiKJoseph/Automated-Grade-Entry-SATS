@@ -108,3 +108,11 @@ JavaScript error: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/
 JavaScript warning: file:///home/jo/Documents/bots/stud_achiv_trk_sys/bot/webpage/STS%20|%20Student%20Result_files/jquery_002.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
 JavaScript error: , line 0: UnknownError: The operation failed for reasons unrelated to the database itself and not covered by any other error code.
 1591894614169	Marionette	INFO	Stopped listening on port 39733
+1591976178878	mozrunner::runner	INFO	Running command: "/usr/bin/firefox" "-marionette" "-foreground" "-no-remote" "-profile" "/tmp/rust_mozprofileNVmPp6"
+1591976184750	Marionette	INFO	Listening on port 33839
+1591976184801	Marionette	WARN	TLS certificate errors will be ignored for this session
+JavaScript error: file:///home/jo/Documents/bots/SATS-grade-entry/bot/webpage/STS%20|%20Student%20Result.htm#, line 602: ReferenceError: myip is not defined
+JavaScript warning: file:///home/jo/Documents/bots/SATS-grade-entry/bot/webpage/STS%20|%20Student%20Result_files/jquery_002.js, line 2: Using //@ to indicate sourceMappingURL pragmas is deprecated. Use //# instead
+Exiting due to channel error.
+Exiting due to channel error.
+Exiting due to channel error.
