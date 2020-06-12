@@ -7,8 +7,8 @@ from selenium.webdriver.support.ui import Select
 from time import sleep
 
 # Authethication credentials
-USERNAME = 'kvafsyel'
-PASSWORD = '18$%KVGs'
+USERNAME = 'admin'
+PASSWORD = 'password'
 
 # Class Details
 ACADEMIC_YEAR = '2019-2020'
