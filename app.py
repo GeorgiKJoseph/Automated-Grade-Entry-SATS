@@ -1,14 +1,13 @@
 # ERROR:
 import os
-
 from selenium import webdriver
 from selenium.webdriver.common.by import By
 from selenium.webdriver.support.ui import Select
 from time import sleep
 
 # Authethication credentials
-USERNAME = 'admin'
-PASSWORD = 'password'
+USERNAME = 'kvafsyel'
+PASSWORD = '18$%KVGs'
 
 # Class Details
 ACADEMIC_YEAR = '2019-2020'
@@ -98,6 +97,7 @@ class Bot:
         xp = '/html/body/div/div[2]/div/div/nav/ul/li[8]/a'
         driver.find_element_by_xpath(xp).click()
 
+        sleep(2)
         # Authethication at Login
         # username textfield xpath
         #   //*[@id="userName"]
@@ -124,6 +124,8 @@ class Bot:
         driver.find_element_by_xpath(xp).click()
 
         # Select 1-10 -> CCE results -> result Form
+        xp = '/html/body/div[3]/div[2]/div/div[3]/table/tbody/tr/td/table/tbody/tr/td[2]/div/div[5]/img'
+        driver.find_element_by_xpath(xp).click()
         xp = '/html/body/div[3]/div[2]/div/div[3]/table/tbody/tr/td/table/tbody/tr/td[1]/div/table/tbody/tr/td/table/tbody/tr/td/div[2]/ul/li[4]/a'
         element = driver.find_element_by_xpath(xp)
         element.click()
@@ -175,7 +177,7 @@ class Bot:
         # Search
         xp = '/html/body/div[3]/div[2]/div/div[3]/table/tbody/tr/td/table/tbody/tr/td[2]/div/form[1]/fieldset/table/tbody/tr[7]/td/input[1]'
         driver.find_element_by_xpath(xp).click()
-        sleep(20)
+        sleep(10)
 
     # Returns an array with all student names
     def getNames(self):
@@ -224,55 +226,37 @@ class Bot:
         index += 1
 
         # English  xpath :-  //*[@id="firstl_id"] , col = 5
-        xp = pre_xp + str(index) + mid_xp + '5' + post_xp
-        print(str(index))
-        element = driver.find_element_by_xpath(xp)
-        dropbox = element.find_element_by_xpath('.//*[@id="firstl_id"]')
-        select = Select(dropbox)
-        value = '2,' + str(marks[0])
-        select.select_by_value(value)
+        self.selectGrade(index,marks[0],'5','.//*[@id="firstl_id"]','2,')
 
         # Hindi  xpath :-  //*[@id="secondl_id"]  , col = 6
-        xp = pre_xp + str(index) + mid_xp + '6' + post_xp
-        element = driver.find_element_by_xpath(xp)
-        dropbox = element.find_element_by_xpath('.//*[@id="secondl_id"]')
-        select = Select(dropbox)
-        value = '14,' + str(marks[1])
-        select.select_by_value(value)
+        self.selectGrade(index,marks[1],'6','.//*[@id="secondl_id"]','14,')
 
         # Sanskrit  xpath :-  //*[@id="thirdl_id"] , col = 7
-        xp = pre_xp + str(index) + mid_xp + '7' + post_xp
-        element = driver.find_element_by_xpath(xp)
-        dropbox = element.find_element_by_xpath('.//*[@id="thirdl_id"]')
-        select = Select(dropbox)
-        value = '23,Exempt'         #default
-        select.select_by_value(value)
+        self.selectGrade(index,-1,'7','.//*[@id="thirdl_id"]','23,Exempt')
 
         # Maths  xpath :-  //*[@id="sub0_id"] , col = 8
-        xp = pre_xp + str(index) + mid_xp + '8' + post_xp
-        element = driver.find_element_by_xpath(xp)
-        dropbox = element.find_element_by_xpath('.//*[@id="sub0_id"]')
-        select = Select(dropbox)
-        value = '28,' + str(marks[2])
-        select.select_by_value(value)
+        self.selectGrade(index,marks[2],'8','.//*[@id="sub0_id"]','28,')
 
         # SocialScience  xpath  :- //*[@id="sub1_id"] , col = 9
-        xp = pre_xp + str(index) + mid_xp + '9' + post_xp
-        element = driver.find_element_by_xpath(xp)
-        dropbox = element.find_element_by_xpath('.//*[@id="sub1_id"]')
-        select = Select(dropbox)
-        value = '30,' + str(marks[3])
-        select.select_by_value(value)
+        self.selectGrade(index,marks[3],'9','.//*[@id="sub1_id"]','30,')
 
         # Science  xpath  :- //*[@id="sub2_id"] , col = 10
-        xp = pre_xp + str(index) + mid_xp + '10' + post_xp
+        self.selectGrade(index,marks[4],'10','.//*[@id="sub2_id"]','31,')
+
+    def selectGrade(self,index,mark,col,relative_xpath,dd_value):
+        pre_xp = '/html/body/div[3]/div[2]/div/div[3]/table/tbody/tr/td/table/tbody/tr/td[2]/div/form[2]/div[3]/table/tbody/tr['
+        mid_xp = ']/td['
+        post_xp = ']'
+
+        xp = pre_xp + str(index) + mid_xp + col + post_xp
         element = driver.find_element_by_xpath(xp)
-        dropbox = element.find_element_by_xpath('.//*[@id="sub2_id"]')
+        dropbox = element.find_element_by_xpath(relative_xpath)
         select = Select(dropbox)
-        value = '31,' + str(marks[4])
+        if mark == -1:
+            value = dd_value
+        else:
+            value = dd_value + str(mark)
         select.select_by_value(value)
-
-
 
 if __name__ == '__main__':
     Bot()
