@@ -29,7 +29,39 @@ driver.get(link)
 
 # File Operator
 class FOperator:
-    def checkName(name):
+    def __init__(self):
+        #English
+        f = open('Inputs/english.txt','r')
+        raw = f.read()
+        self.english = [x for x in raw.split('\n')]
+        f.close()
+
+        # Hindi
+        f = open('Inputs/hindi.txt','r')
+        raw = f.read()
+        self.hindi = [x for x in raw.split('\n')]
+        f.close()
+
+        # Maths
+        f = open('Inputs/maths.txt','r')
+        raw = f.read()
+        self.maths = [x for x in raw.split('\n')]
+        f.close()
+
+        # Social Science
+        f = open('Inputs/social_science.txt','r')
+        raw = f.read()
+        self.social = [x for x in raw.split('\n')]
+        f.close()
+
+        # Science
+        f = open('Inputs/science.txt','r')
+        raw = f.read()
+        self.science = [x for x in raw.split('\n')]
+        f.close()
+
+
+    def checkName(self,name):
         # Reads from the file
         f = open('Inputs/names.txt','r')
         raw = f.read()
@@ -41,41 +73,19 @@ class FOperator:
         return -1
 
     # Returns mark in order [ENG,HINDI,MATHS,SOCIAL,SCIENCE]
-    def getMarks(index):
+    def getMarks(self,index):
         marks = []
+
         # English
-        f = open('Inputs/english.txt','r')
-        raw = f.read()
-        english = [x for x in raw.split('\n')]
-        f.close()
-        marks.append(english[index])
-
+        marks.append(self.english[index])
         # Hindi
-        f = open('Inputs/hindi.txt','r')
-        raw = f.read()
-        hindi = [x for x in raw.split('\n')]
-        f.close()
-        marks.append(hindi[index])
-
+        marks.append(self.hindi[index])
         # Maths
-        f = open('Inputs/maths.txt','r')
-        raw = f.read()
-        maths = [x for x in raw.split('\n')]
-        f.close()
-        marks.append(maths[index])
-
+        marks.append(self.maths[index])
         # Social Science
-        f = open('Inputs/social_science.txt','r')
-        raw = f.read()
-        social = [x for x in raw.split('\n')]
-        f.close()
-        marks.append(social[index])
-
+        marks.append(self.social[index])
         # Science
-        f = open('Inputs/science.txt','r')
-        science = [x for x in raw.split('\n')]
-        f.close()
-        marks.append(science[index])
+        marks.append(self.science[index])
 
         return marks
 
@@ -85,10 +95,11 @@ class Bot:
         self.navToEntryPage()
         self.selectSection()
         names = self.getNames()
+        foper = FOperator()
         for i in range(len(names)):
-            name_file_index = FOperator.checkName(names[i])
+            name_file_index = foper.checkName(names[i])
             if name_file_index != -1:
-                marks = FOperator.getMarks(name_file_index)
+                marks = foper.getMarks(name_file_index)
                 self.setGrades(i,marks)
 
     # Navigates to data entry page
