@@ -1,4 +1,4 @@
-# ERROR:
+# Designed for https://sts.karnataka.gov.in/SATS/# on 18/06/2020 20:49:00
 import os
 from selenium import webdriver
 from selenium.webdriver.common.by import By
@@ -6,8 +6,8 @@ from selenium.webdriver.support.ui import Select
 from time import sleep
 
 # Authethication credentials
-USERNAME = 'kvafsyel'
-PASSWORD = '18$%KVGs'
+USERNAME = 'username'
+PASSWORD = 'password'
 
 # Class Details
 ACADEMIC_YEAR = '2019-2020'
@@ -30,6 +30,12 @@ driver.get(link)
 # File Operator
 class FOperator:
     def __init__(self):
+        #Names
+        f = open('Inputs/names.txt','r')
+        raw = f.read()
+        self.names = [x for x in raw.split('\n')]
+        f.close()
+
         #English
         f = open('Inputs/english.txt','r')
         raw = f.read()
@@ -60,16 +66,20 @@ class FOperator:
         self.science = [x for x in raw.split('\n')]
         f.close()
 
+    def validate(self):
+        if len(self.names) == len(self.english) == len(self.hindi):
+            if len(self.names) == len(self.maths) == len(self.social):
+                if len(self.names) == len(self.science):
+                    return True
+        print('Names\tEng\tHin\tMat\tSocl\tSci')
+        print(len(self.names-1),'\t',len(self.english-1),'\t',len(self.hindi-1),'\t',end='')
+        print(len(self.maths-1),'\t',len(self.social-1),'\t',len(self.science-1))
+        return False
 
     def checkName(self,name):
-        # Reads from the file
-        f = open('Inputs/names.txt','r')
-        raw = f.read()
-        names = [x for x in raw.split('\n')]
-        f.close()
         # Returns index if name is present in names.txt
-        if name in names:
-            return names.index(name)
+        if name in self.names:
+            return self.names.index(name)
         return -1
 
     # Returns mark in order [ENG,HINDI,MATHS,SOCIAL,SCIENCE]
@@ -96,11 +106,14 @@ class Bot:
         self.selectSection()
         names = self.getNames()
         foper = FOperator()
-        for i in range(len(names)):
-            name_file_index = foper.checkName(names[i])
-            if name_file_index != -1:
-                marks = foper.getMarks(name_file_index)
-                self.setGrades(i,marks)
+        if foper.validate():
+            for i in range(len(names)):
+                name_file_index = foper.checkName(names[i])
+                if name_file_index != -1:
+                    marks = foper.getMarks(name_file_index)
+                    self.setGrades(i,marks)
+        else:
+            print('Terminating...\nCheck Input files:(')
 
     # Navigates to data entry page
     def navToEntryPage(self):
@@ -135,6 +148,7 @@ class Bot:
         driver.find_element_by_xpath(xp).click()
 
         # Select 1-10 -> CCE results -> result Form
+        sleep(1)
         xp = '/html/body/div[3]/div[2]/div/div[3]/table/tbody/tr/td/table/tbody/tr/td[2]/div/div[5]/img'
         driver.find_element_by_xpath(xp).click()
         xp = '/html/body/div[3]/div[2]/div/div[3]/table/tbody/tr/td/table/tbody/tr/td[1]/div/table/tbody/tr/td/table/tbody/tr/td/div[2]/ul/li[4]/a'
